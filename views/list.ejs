@@ -1,0 +1,38 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <title>Document</title>
+    <link rel="stylesheet" href="styles.css">
+</head>
+
+<body>
+    <div class="box" id="heading">
+        <h1>
+            <%= listTitle %>
+        </h1>
+    </div>
+    <div class="box">
+        <% for( var i=0 ; i < tits.length ; i++){%>
+            <div class="item">
+                <input type="checkbox">
+                <p>
+                    <%= tits[i] %>
+                </p>
+            </div>
+            <% }%>
+    </div>
+
+    <!-- <form action="/" method="post">
+        <input type="text" name="bbb" placeholder="Enter The Next List" autocomplete="off">
+        <button type="submit" class=" ">+</button>
+    </form> -->
+</body>
+    <form action="/ " method="post">
+        <input type="text" name="bbb" placeholder="Enter The Next List" autocomplete="off">
+        <button type="submit" name="top1" value= <%= listTitle %>>+</button>
+    </form>
+</body>
+
+</html>
